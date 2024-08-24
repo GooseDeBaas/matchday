@@ -6,7 +6,7 @@ aantal_speeldagen = int((len(teams)-1)*2)
 aantal_teams = len(teams)
 matchdays = []
 
-# Creating starting set-up circle
+# Creating starting set-up circle (Round Robin Tournament Algorithm)
 
 array1 = teams[:int(len(teams)/2)]
 array2 = teams[int((len(teams)/2)):int(len(teams))]
@@ -19,8 +19,6 @@ def rotate(array1, array2):
     array1.insert(1, team_to_first)
     team_to_last = array1.pop(len(array1)-1)
     array2.append(team_to_last)
-
-heenronde = None
 
 # Create first leg games and rotate
 
