@@ -5,6 +5,7 @@ teams = ["Anderlecht", "AA Gent", "Union SG", "Genk", "Antwerp", "Club Brugge", 
 aantal_speeldagen = int((len(teams)-1)*2)
 aantal_teams = len(teams)
 matchdays = []
+# TO DO Prompt for teams
 
 # Rotating function
 def rotate(array1, array2):
@@ -41,10 +42,7 @@ for i in range(int((aantal_speeldagen)/2)):
     matchdays.append(speeldag)
     rotate(array1, array2)
 
-
-
-# Print out random matchdays
-
+# Print out matchdays
 for i in range(int(aantal_speeldagen)):
     print(f'Speeldag {i+1}: ')
     for j in range(int(aantal_teams/2)):
